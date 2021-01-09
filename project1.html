@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Joe Hewett</title>
+
+  </head>
+
+  <body>
+
+
+
+  <!-- TOP NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top fixed-top" id="home">
+
+      <div class="container ml-md-auto">
+
+          <div class="navbar-brand d-none d-md-block">
+              Joe Hewett
+          </div>
+
+          <div class="navbar-brand d-block d-md-none">
+              Joe Hewett
+          </div>
+
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="collapse_target">
+
+              <ul class="nav navbar-nav ml-auto smooth-scroll">
+
+                  <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+
+                  <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+
+                  <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+         
+                  <li class="nav-item"><a class="nav-link" href="index.html#cv">CV</a></li>
+
+                  <li class="nav-item"><a class="nav-link" href="index.html#notes">Notes</a></li>
+
+                  <li class="nav-item"><a class="nav-link" href="contact-form-bootstrap\formpage.html">Contact</a></li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Travel</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="service2.html">Europe</a>
+                      <a class="dropdown-item" href="service1.html">Asia</a>
+                      <a class="dropdown-item" href="service3.html">Oceania</a>
+                      <a class="dropdown-item" href="service3.html">America</a>
+                    </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+
+    <div class="container py-5">
+
+        <div class="row py-3">
+            <div class="col-9">
+                <h2 class="text-muted">Natural Selection Simulation</h2></br>
+                  <p>This simulation uses cells that can search for food in order to gain enough energy to reproduce. Upon reproduction there is a chance of mutation
+                    which allows the cells traits to change. Currently only speed and sense distance are featured, but I hope to add more characteristics like agression, strength and size.
+                    The results so far have been interesting. So far I have observed:
+                    <ul>
+                      <li>Extinction and population explosion events</li>
+                      <li>The emergence of dominant cell families that cause the extinction of other families</li>
+                      <li>Increase in average sense distance over generations</li>
+                      <li>Stabilising of population over many generations</li>
+                      <li>Massive instability caused by changing available food</li>
+                      <li>Loss of genetic diversity during extinction events</li>
+                      <li>Decreasing of average population as sense distance and speed increase</li>
+                    </ul> 
+                  </p>
+            </div>
+            <div class="col-3">
+                <a class="btn btn-info btn-block" href="https://gitlab.com/JoeHewett/natural-selection-sim" role="button">GitLab</a>
+          </div>
+        </div>
+
+        <div class="row py-5">
+                <div class="card-group">
+                        <div class="card">
+                          <img class="card-img-top" src="img/nss2.PNG" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Cells with Traits</h5>
+                            <p class="card-text">A number of cells are generated with a starting energy level, and a random sense distance and speed. From here, the simulation is left to run.</p>
+                            
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img class="card-img-top" src="img/nss1.PNG" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Food &amp Energy</h5>
+                            <p class="card-text">The squares represent cells, and the dots represent food. The sense distance of the cells determines how far away they can sense food. Upon entering a square with food the cells gain energy</p>
+                            
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img class="card-img-top" src="img/nss3.PNG" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Reproduction &amp Mutation</h5>
+                            <p class="card-text">Upon reaching high enough energy levels the cells are able to reproduce, at a cost. The cells information is passed on with a chance of mutation.</p>
+                            
+                          </div>
+                        </div>
+                      </div>
+        </div>
+
+
+        <div class="row py-5">
+            <div class="col-12">
+                <h3>Project Goal</h3>
+                <p>The goal of the project is to simulate divergence within species - for example a sub-species that prioritises speed but uses a lot of energy, and a sub-species that evolves to prioritise huge size and slow movement to fend off attacks.</br> 
+                So far this has not been observed because the number of traits is too small to create any specialised sub-species.</br><br>
+                In pursuit of this goal, I'm going to add the following traits:
+                <ul>
+                  <li>Defence - chance of defending and attack, based on opponents size and aggression</li>
+                  <li>Aggression - chance of attacking</li>  
+                  <li>Size - larger cells would require more energy to maintain size but would be slower</li> 
+                  <li>Family Loyalty - cells can recognise other cells of their family and share food, inmproving chances of genetics being passed on</li>
+                </ul>
+
+                I will also add features to the program to allow for better understanding of the results:
+                <ul>
+                  <li>Poplation over time graph to show how population levels change</li>
+                  <li>Graphs of trait levels over time to show how cells become more dominant / weaker</li>
+                  <li>System for recognising and grouping families </li>
+                  <li>A more intelligent system of food that varies over time to put strain on populations</li>
+                </ul>
+                  
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </body>
+    </html>

@@ -1,0 +1,19 @@
+
+code {
+
+    color:#428bca;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.centeredtext {
+    text-align:center;
+}
+
+.card:hover {opacity: 0.8;}
